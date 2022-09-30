@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using TaskTrackerApi.Models;
+using Task = TaskTrackerApi.Models.Task;
 
 namespace TaskTrackerApi.Data
 {
@@ -6,8 +8,8 @@ namespace TaskTrackerApi.Data
     {
         public DataContext(DbContextOptions<DataContext> options) : base(options) 
         {
-        
         }
-        public DbSet<Task> Tasks { get; set; }  
+
+        public DbSet<Task> Tasks { get; set; }
     }
 }

@@ -8,7 +8,7 @@ namespace TaskTrackerApi.Models
         public int Id { get; set; }
         [Required]
         public string Title { get; set; }
-        public DateOnly Date { get; set; } = new DateOnly();
+        public new DateTime Date { get; set; }
         public bool Reminder { get; set; }
     }
 }

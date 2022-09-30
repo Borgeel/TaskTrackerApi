@@ -16,7 +16,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<DataContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-}) ;
+});
+
 
 //Enable CORS
 builder.Services.AddCors(options =>
