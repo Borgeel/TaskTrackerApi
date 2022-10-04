@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TaskTrackerApi.Data;
 using TaskTrackerApi.Models;
+using Task = TaskTrackerApi.Models.Task;
 
 namespace TaskTrackerApi.Controllers
 {
